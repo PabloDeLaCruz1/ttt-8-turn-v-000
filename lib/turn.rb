@@ -37,7 +37,7 @@ end
 
 def turn(board, turn = 1)
   
-  turn % 2 == 0 ? player = "O" : player = "X"
+  turn % 2 == 0 ? player = "X" : player = "O"
  # ask for input
  puts "Please enter 1-9:"
  
