@@ -35,8 +35,8 @@ def position_taken? (board, index)
   end
 end
 
-def turn(board)
-  
+def turn(board, turn = 1)
+  if turn % 1 
  # ask for input
  puts "Please enter 1-9:"
  
