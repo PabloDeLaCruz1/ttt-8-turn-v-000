@@ -36,7 +36,8 @@ def position_taken? (board, index)
 end
 
 def turn(board, turn = 1)
-  
+  while turn < 10 
+
   turn % 2 == 0 ? player = "X" : player = "O"
   
   # ask for input
@@ -60,8 +61,6 @@ def turn(board, turn = 1)
     turn(board, turn)
   end
   
-  while turn < 10 
-    turn(board, turn)
   end
   puts "thank you for playing"
 end 
