@@ -36,7 +36,7 @@ def position_taken? (board, index)
 end
 
 def turn(board, turn = 1)
-  if turn % 1 
+  turn % 2 == 0 ? player = "O" : player = "X"
  # ask for input
  puts "Please enter 1-9:"
  
@@ -49,7 +49,7 @@ index = input_to_index(input)
 # if index is valid
 if valid_move?(board, index)
 #   make the move for index
-  move(board, index)
+  move(board, index, player)
 #   show the board
   display_board(board)
 else
