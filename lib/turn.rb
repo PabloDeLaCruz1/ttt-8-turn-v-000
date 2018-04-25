@@ -60,7 +60,7 @@ def turn(board, turn = 1)
     turn(board, turn)
   end
   
-  while turn < 9 
+  while turn < 8 
     turn(board, turn)
   end
 end 
