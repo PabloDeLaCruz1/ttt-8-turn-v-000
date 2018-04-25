@@ -63,4 +63,5 @@ def turn(board, turn = 1)
   while turn < 8 
     turn(board, turn)
   end
+  puts "thank you for playing"
 end 
