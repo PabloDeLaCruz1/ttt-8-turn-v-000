@@ -54,7 +54,7 @@ if valid_move?(board, index)
   display_board(board)
 else
 #   ask for input again until you get a valid input
-  turn(board, turn+= 1)
+  turn(board, turn += 1)
 end
   
 
